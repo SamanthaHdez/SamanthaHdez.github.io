@@ -57,7 +57,7 @@ div.foto{
 	font-size: 20px;
 	color: white;
 	background-image: url("fondo2.png");
-	background-repeat: no-repeat;
+	background-repeat: repeat;
 	background-attachment: fixed;
 }
 .redes{
