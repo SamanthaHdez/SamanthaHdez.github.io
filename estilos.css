@@ -1,0 +1,258 @@
+a{
+	text-decoration: none;
+	color: black;
+}
+body{
+	width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #f4ae21, #ffa23f);
+}
+ul.horizontal{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+    top: 0;
+	right: 0;
+    width: 100%;
+}
+ul.horizontal li{
+	float:right;
+}
+ul.horizontal li a{
+	display:inline-block;
+	color: white;
+	text-align: center;
+	padding:16px 10px;
+	text-decoration: none;
+}
+li.menu a:hover{
+	background-color: #111;
+}
+div{
+
+	margin-top: 40px;
+
+}
+div.inicio{
+	display: inline-block;
+	padding: 5px;
+	margin-top: 40px;
+	width:50%;
+
+}
+div.foto{
+	display: inline-block;
+	padding: 10px;
+	margin-left: 8%;
+}
+.formacion, .cripto{
+	display: block;
+	margin-right: 10px;
+	padding: 5px;
+	border: 1px solid #ff311f;
+	text-align:center;
+	font-size: 20px;
+	color: white;
+	background-image: url("fondo2.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.redes{
+	display: block;
+	color: white;
+	margin-right: 10px;
+	padding: 0;
+	border: 1px solid white;
+	text-align:center;
+	font-size: 20px;
+	background-image: url("fondored.png");
+	background-attachment: fixed;
+}
+.hobbie1, .hobbie2, .hobbie3{
+	display: inline-block;
+	margin: 4px;
+	padding: 5px;
+	border: 1px double #ff311f;
+	max-width: 400px;
+	max-height: 500px;
+	-webkit-flex-flow: column;
+            flex-flow: column;
+	text-align: justify;
+	font-size: 20px;
+
+}
+.hobbies{
+	border: 2px double #ff311f;
+	margin-right: 10px;
+	background-image:url("fondo3.jpg");
+	background-attachment: fixed;
+	color: white;
+}
+.cripto{
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+img.foto2{
+
+}
+img.foto {
+	width: 45%;
+	border: 2px double black;
+}
+
+div.formacion{
+	display: block;
+}
+
+.tabla{
+	background-color: #d94a38;
+	font-size: 20px;
+	border-collapse: separate;
+	margin: auto;
+
+}
+tr, td{
+	border: 2px solid white;
+	text-align: center;
+	padding: 10px;
+	list-style-type: none;
+}
+.col1{
+	background-color: #d94a38;
+	color: #ffffff;
+}
+.col2{
+	background-color: #FD7940;
+	color: #323131;
+}
+a img{
+	margin: 10px;
+	padding: 5px;
+	max-width: 7%;
+}
+.hobbie{
+	width: 50%;
+	max-height: 250px;
+}
+.burbuja{
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    z-index: -1;
+    animation: burbujas 3s linear infinite ;
+}
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 20px;
+    height: 20px;
+    left: 15%;
+    animation-duration: 1.5s;
+    animation-delay: 7s;
+}
+
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: 3s;
+}
+
+.burbuja:nth-child(5){
+    width: 70px;
+    height: 70px;
+    left: 65%;
+    animation-duration: 3s;
+    animation-delay: 1s;
+}
+
+.burbuja:nth-child(6){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(7){
+    width: 20px;
+    height: 20px;
+    left: 50%;
+    animation-duration: 4s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(8){
+    width: 100;
+    height: 100px;
+    left: 52%;
+    animation-duration: 5s;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(9){
+    width: 65px;
+    height: 65px;
+    left: 51%;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.burbuja:nth-child(10){
+    width: 40px;
+    height: 40px;
+    left: 35%;
+    animation-duration: 3s;
+    animation-delay: 4s;
+}
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(30px);
+    }
+    50%{
+        opacity: .4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
